@@ -53,8 +53,6 @@ footer .address a {
    margin-bottom: 16px;
 }
 
-footer .contact {}
-
 footer .contact ul {
    display: flex;
    align-items: center;
@@ -107,14 +105,34 @@ footer .created div:first-child {
    margin-right: 36px;
 }
 
+
 /* Mobile */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 640px) {
    footer {
       background-color: #000;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;   
+      padding-top: 27px; 
+      padding-left: 17px; 
+   }
+
+   footer .contact {
+     margin: 27px auto;
+   }
+
+   footer .contact ul {
+      display: flex;
       align-items: center;
-      justify-content: space-evenly;     
-      padding: 25px 0;
+      justify-content: center;
+      list-style-type: none;
+      flex-direction: column;
+   }  
+   
+   footer .created {
+      margin: 0 auto;
+      width: 224px;
+      justify-content: space-between;
    }
 }
