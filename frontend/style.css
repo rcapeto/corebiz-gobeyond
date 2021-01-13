@@ -51,6 +51,11 @@ footer .address a {
    font-size: 13px;
    line-height: 12px;
    margin-bottom: 16px;
+   transition: filter ease-in-out 0.3s;
+}
+
+footer .address a:hover {
+  filter: brightness(0.6);
 }
 
 footer .contact ul {
@@ -71,6 +76,12 @@ footer .contact ul li {
    display: flex;
    align-items: center;
    justify-content: space-evenly;
+   cursor: pointer;
+   transition: filter ease-in-out 0.3s;
+}
+
+footer .contact ul li:hover {
+  filter: brightness(0.6);
 }
 
 footer .contact ul li:last-child img {
