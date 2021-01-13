@@ -118,6 +118,7 @@ footer .created div:first-child {
 
 
 /* Mobile */
+
 @media screen and (max-width: 640px) {
    footer {
       background-color: #000;
@@ -135,12 +136,8 @@ footer .created div:first-child {
 
    footer .contact ul {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      list-style-type: none;
-      flex-direction: column;
    }  
-   
+
    footer .created {
       margin: 0 auto;
       width: 224px;
