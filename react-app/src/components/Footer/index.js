@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet" />
-      <link rel="stylesheet" href="./style.css">
-      <title>Home</title>
-   </head>
-   <body>
+import mailImage from './image/mail.png';
+import headPhoneImage from './image/headphone.png';
+import corebizLogo from './image/corebiz.png';
+import vtexLogo from './image/vtex.png';
+
+import './style.css';
+
+export default function Footer() {
+   return(
       <footer>
          <section class="address">
             <h3>Localização</h3>
@@ -21,12 +19,12 @@
          <section class="contact">
             <ul>
                <li>
-                  <img src="./image/mail.png" alt="Entre em contato  ">
+                  <img src={mailImage} alt="Entre em contato" />
                   <a href="/fale-conosco">Entre em contato</a>
                </li>
 
                <li>
-                  <img src="./image/headphone.png" alt="Fale Conosco">
+                  <img src={headPhoneImage} alt="Fale Conosco" />
                   <a href="/chat">Fale com o nosso consultor online</a>
                </li>
             </ul>
@@ -34,14 +32,14 @@
          <section class="created">
             <div>
                <p>Created by</p>
-               <img src="./image/corebiz.png" alt="Logo Corebiz">
+               <img src={corebizLogo} alt="Logo Corebiz" />
             </div>
 
             <div>
                <p>Powered by</p>
-               <img src="./image/vtex.png" alt="Logo VTEX">
+               <img src={vtexLogo} alt="Logo VTEX" />
             </div>
          </section>
       </footer>
-   </body>
-</html>
+   );
+}
