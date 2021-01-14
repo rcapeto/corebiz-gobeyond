@@ -2,7 +2,13 @@ const searchButton = document.querySelector('button');
 const searchInput = document.querySelector('input');
 const marvelRow = document.getElementById('marvel-row');
 
-window.addEventListener('load', () => getHeroes());
+window.addEventListener('load', () => {
+   try {
+      getHeroes()
+   } catch (err) {
+      console.error(err);
+   }
+});
 searchButton.addEventListener('click', sendForm);
 searchInput.addEventListener('input', formatedInput);
 
