@@ -4,7 +4,7 @@ const marvelRow = document.getElementById('marvel-row');
 
 window.addEventListener('load', () => {
    try {
-      getHeroes()
+      getHeroes();
    } catch (err) {
       console.error(err);
    }
