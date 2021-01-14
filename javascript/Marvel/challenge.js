@@ -38,6 +38,8 @@ function sendForm() {
 async function getHeroes(number = 20) {
    marvelRow.innerHTML = '';
 
+   if(number > 100) number = 100;
+
    const urlAPI = `https://gateway.marvel.com:443/v1/public/characters?ts=1&limit=${number}&apikey=7e99323b2679072c3e1119052f1aca13&hash=779d449f29c113e00feddbada3e680af`;
 
    const request = await fetch(urlAPI);
