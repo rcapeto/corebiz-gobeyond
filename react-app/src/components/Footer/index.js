@@ -8,7 +8,7 @@ import './style.css';
 export default function Footer() {
    return(
       <footer>
-         <section class="address">
+         <section className="address">
             <h3>Localização</h3>
             <p>Avenida Andrômeda, 2000. Bloco 6 e 8</p>
             <p>Alphaville SP</p>
@@ -16,7 +16,7 @@ export default function Footer() {
             <a href="tel:+551130901039">+55 11 3090-1039</a>
          </section>
 
-         <section class="contact">
+         <section className="contact">
             <ul>
                <li>
                   <img src={mailImage} alt="Entre em contato" />
@@ -29,7 +29,7 @@ export default function Footer() {
                </li>
             </ul>
          </section>
-         <section class="created">
+         <section className="created">
             <div>
                <p>Created by</p>
                <img src={corebizLogo} alt="Logo Corebiz" />
